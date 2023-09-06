@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <noscript>включите js</noscript>
+    <!-- работает для обозночения того,что дж не работает -->
+    <script src="js.js"></script>
+    <!-- для подключения сторонних дж файлов, либо писать в нём код который будет работать на данной странице. Так же желательно его прописывать в самом концу body -->
+    <script>
+        // document.write("js говорит привет");  выводит текст на стр ; consjle выводит текст в консоль; 
+        // console.log("js говорит привет");
+        // console.info("js говорит привет");
+        // console.error("отображается в консоль в виде ошибки");
+        // console.warn("js говорит привет"); 
+    </script>
+    <!-- 
+    var num;
+    num = 5;
+     -->
+
+    <script>
+        var num = 5;
+        num = 7;
+        console.log("переменная: " + num + ".");
+        // const num = 5;
+        // console.log("переменная: " + num + ".");
+
+        var number;
+        number = 5.5;
+// можно хранить целые и дес.числа, "строки слов", буллевые выр труи ли фолс
+
+    </script>
+
+    <script>
+        var num_1 = 5;
+        var num_2 = 15;
+        var res = num_1 - num_2;
+
+        console.log("вычитание" + res);
+        // console.log("вычитание" + (num_1 - num_2));
+
+        var num_3 = 5;
+        num_3 = num_3 + 7;
+        // num_3 += 7;
+        // num_3++;
+        // num_3 += 1;
+        // num_3--;
+        // num_3 -= 1;
+        console.log("результат" + num_3);
+
+        var str_1 = Number("12");
+        var str_2 = Number("2");
+        console.log("результат " + (str_1 + str_2));
+
+        console.log("Math:" + Math.PI);
+        console.log("Math:" + Math.E);
+        console.log("Math:" + Math.min(3, 6, 2, 8, -2, 6, 8));
+
+        var number = 15;
+        if (number == 5) {
+            console.log("ok");
+        }
+        // if ( number > >= <= != == 5) {
+        //     console.log("ok");
+        // }
+
+        var number = 15;
+        var IsHasHouse = true;
+        //  or||        and &&       IsHasHouse == false >>>  !IsHasHouse
+        if (number != 15 || IsHasHouse == true) {
+            console.log("ok");
+        }
+        else if (number > 10) {
+            console.log("ok!")
+        } else if (number == 7) { console.log("7!") }
+        else {
+            console.log("error!")
+        }
+
+        var stroka = "word";
+        switch (stroka) {
+
+            case "4":
+                console.log("переменная со значением 4");
+                break;
+            case "45":
+                console.log("переменная со значением 4");
+                break;
+            case "word":
+                console.log('переменная со значением "word"');
+                break;
+            default:
+                console.log("default");
+        }
+
+        var arr = [5, true, "stroka", 5.7, 0, -100];
+        arr[3] = "word";
+        console.log(arr[0]);
+        console.log(arr.length);
+
+        var matrix = [[4, 6, 8], ["stroka", 5.7], [0, -100]
+        ];
+        matrix[1][0] = 90;
+        console.log(matrix);
+
+        for (var i = 0; i < 10; i++) {
+            console.log(i);
+        }
+        // начальное число, до, условие
+        for (var i = 100; i > 5; i /= 2) {
+            console.log(i);
+        }
+
+        var j = 0;
+        while (j < 10) {
+            console.log(j);
+            j++;
+        }
+
+        var j = 0;
+        while (j < 10) {
+            console.log(j);
+            j++;
+        }
+
+
+        var j = 1000;
+        while (j > 100) {
+            console.log(j);
+            j -= 100;
+        }
+
+        // var isHasCar = true;
+        // while(isHasCar){
+        // }
+
+        var x = 0;
+        do {
+            console.log(x);
+            x++;
+        } while (x < 10);
+
+        for (var i = 10; i <= 20; i += 2) {
+            if (i > 15)
+                break;
+
+            console.log(i);
+        }
+
+        for (var i = 10; i <= 20; i++) {
+            console.log(i);
+        }
+
+
+        for (var i = 10; i <= 20; i++) {
+            if (i % 2 == 0)
+                continue;
+            console.log(i);
+        }
+
+
+        var arr = [5, 7, 3, 8, 9, 91];
+        for (var i = 0; i < arr.length; i++) {
+            arr[i] *= 2;
+            console.log("элемент " + (i + 1) + ": " + arr[i]);
+        }
+
+        var arr = [5, 7, 3, 8, 9, 91];
+        for (var i = 0; i < arr.length; i++) {
+
+            console.log("элемент " + (i + 1) + ": " + arr[i]);
+        }
+
+
+        // alert("всплывающее окно");
+
+        // confirm("окно с отмена-ок");
+
+        // var data = confirm("окно с отмена-ок");
+        // console.log(data);
+
+        // var data = confirm("окно с отмена-ок");
+        // if(data) {
+        //     alert("ok");
+        // }
+
+        // prompt(" скажите сколько вам лет", 20);
+
+        // var date = prompt(" скажите сколько вам лет");
+        // console.log(date);
+
+        // var person = null;
+        // if (confirm("вы точно уверены?")) {
+        //     person = prompt("введите ваше имя");
+        //     alert("Привет, " +  person);
+        // } else {
+        //     alert("вы нажали на отмена");
+        // } 
+
+
+        // function info() {
+        //     console.log("hi");
+        //     console.log("!");
+        // }
+
+        // info();
+
+
+        function info(word) {
+            console.log(word + "!");
+        }
+        info("hi2");
+
+
+
+        function summa(a, b) {
+            var res = a + b;
+            console.log(res);
+        }
+        summa(5, 7)
+
+
+        function summa1(arr) {
+            var sum = 0;
+            for (var i = 0; i < arr.length; i++)
+                sum += arr[i];
+            console.log(sum);
+        }
+        // 
+        var array = [6, 8, 1];
+        var array_1 = [6, 2, 8, 1];
+        summa1(array);
+        summa1(array_1);
+
+        // 
+
+        function summa1(arr) {
+            var sum = 0;
+            for (var i = 0; i < arr.length; i++)
+                sum += arr[i];
+            console.log(sum);
+            return sum;
+        }
+
+        var array = [6, 8, 1];
+        var res = summa1(array);
+        console.log("результат; " + res);
+
+
+        //   var num = 10;
+        function info() {
+            var num = 10;
+            console.log(num);
+        }
+        info();
+
+        var num = 10;
+        function info() {
+            var num = 20;
+            console.log(num);
+        }
+        info();
+
+
+    </script>
+
+    <!-- <button onclick="alert('вы нажали на меня')">нажми на меня</button> -->
+    <button onclick="onClickButton()">нажми на меня</button>
+    <p ondblclick="onDBLClickButton()">нажми на меня дважды!!</p>
+    <button name="mainButton" onclick="onClickButtont(this)">нажми на меняz</button>
+    <input  oninput="oninput(this)">
+
+
+
+
+
+
+
+
+    <p id="text" title="обычный текст">text</p>
+
+
+
+
+
+
+
+</body>
+
+</html>
