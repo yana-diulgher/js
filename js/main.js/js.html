@@ -6,11 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="js/main.js"></script>
-    <script>
-       butt 
-    </script>
+    <p id="text1">text</p>
 
 
+    <span class="simple-text"> text 1</span>
+    <span class="simple-text"> text 2</span>
+    <span> text 3</span>
+    <!-- <form id="main-form" onsubmit="return checkForm(this)"  method="post"> -->
+    <form id="main-form"  method="post">
+        <label for="name">Имя:</label>
+        <input type="text" name="name" placeholder="Имя" id="name"> <br><br>
+        <label for="password">Пароль:</label>
+        <input type="text" name="pass" placeholder="Пароль" id="pass"><br><br>
+        <label for="repass">Проверка пароля:</label>
+        <input type="text" name="name" placeholder="Проверка пароля" id="repass"><br><br>
+        <span>пол:</span>
+        <input type="radio" name="state" id="male" value="мужской" >
+        <label for="male">мужской</label>
+        <input type="radio" name="state" id ="famale" value="женский">
+        <label for="password">женский</label><br><br>
+        <div id="fail" style="color: brown;"></div>
+        <input type="submit" onclick="" name="submit" value="Готово">
+    </form>
+
+
+
+
+
+
+   
+    <script src="jss.js"></script>
 </body>
 </html>
